@@ -1,18 +1,23 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+
   background-color: #f5f2eb;
   color: #17332d;
 }
 
-.navbar { 
+.navbar {
   width: 100%;
   min-height: 90px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   padding: 0 50px;
+
   box-sizing: border-box;
+
   background-color: #102d29;
 }
 
@@ -23,26 +28,41 @@ body {
 
 .nav-links {
   display: flex;
+
   gap: 35px;
 }
 
 .nav-links a {
   text-decoration: none;
+
   color: white;
+
   font-size: 17px;
+
   padding-bottom: 5px;
 }
 
 .nav-links a:hover {
   color: #d88b6c;
+
+  border-bottom: 2px solid #d88b6c;
+}
+
+.nav-links a.active {
+  color: #d88b6c;
+
   border-bottom: 2px solid #d88b6c;
 }
 
 .home-section {
   display: flex;
+
   align-items: center;
+
   gap: 50px;
+
   padding: 60px;
+
   background-color: #f5f2eb;
 }
 
@@ -52,21 +72,29 @@ body {
 
 .home-text h1 {
   font-family: Georgia, serif;
+
   font-size: 45px;
+
   color: #17352f;
 }
 
 .home-text p {
   font-size: 18px;
+
   line-height: 1.5;
 }
 
 .home-button {
   display: inline-block;
+
   margin-top: 15px;
+
   padding: 12px 20px;
+
   background-color: #17352f;
+
   color: white;
+
   text-decoration: none;
 }
 
@@ -78,68 +106,79 @@ body {
   width: 55%;
 }
 
-
 .home-image img {
   width: 100%;
+
   height: 350px;
+
   object-fit: cover;
 }
 
+.quick-info {
+  display: flex;
 
-footer {
-  background-color: #102d29;
+  justify-content: space-around;
+
+  gap: 20px;
+
+  padding: 25px 50px;
+
+  background-color: #17352f;
+
   color: white;
+}
+
+.info-box {
   text-align: center;
-  padding: 20px;
+
+  width: 30%;
 }
 
+.info-box h2 {
+  margin: 0 0 8px;
 
+  font-size: 32px;
 
-
-@media screen and (max-width: 650px) {
-
-  .navbar {
-    height: auto;
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .logo {
-    margin-bottom: 15px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .home-section {
-    flex-direction: column;
-    padding: 30px 20px;
-  }
-
-  .home-text {
-    width: 100%;
-  }
-  .home-text h1 {
-    font-size: 35px;
-  }
-  .home-image {
-    width: 100%;
-  }
-  .home-image img {
-    height: 250px;
-  }
-
+  color: #d88b6c;
 }
 
+.info-box p {
+  margin: 0;
 
+  line-height: 1.4;
+}
+
+.home-info {
+  padding: 45px 60px;
+
+  background-color: #f5f2eb;
+}
+
+.home-info h2 {
+  font-family: Georgia, serif;
+
+  font-size: 32px;
+}
+
+.home-info p {
+  max-width: 850px;
+
+  line-height: 1.6;
+}
+
+.text-link {
+  color: #17352f;
+
+  font-weight: bold;
+}
 
 .page-title {
   background-color: #17352f;
+
   color: white;
+
   text-align: center;
+
   padding: 40px 20px;
 }
 
@@ -147,12 +186,23 @@ footer {
   font-family: Georgia, serif;
 
   font-size: 40px;
+
+  margin-bottom: 10px;
+}
+
+.page-title p {
+  margin-bottom: 0;
 }
 
 .about-section {
   display: flex;
+
+  align-items: center;
+
   gap: 40px;
+
   padding: 50px;
+
   background-color: #f5f2eb;
 }
 
@@ -162,6 +212,8 @@ footer {
 
 .about-image img {
   width: 100%;
+
+  display: block;
 }
 
 .about-text {
@@ -170,45 +222,51 @@ footer {
 
 .about-text h2 {
   color: #17352f;
+
+  font-size: 30px;
 }
 
-.about-text p,
-.about-text li {
-  line-height: 1.5;
+.about-text p {
+  line-height: 1.6;
 }
 
+.plan-section {
+  padding: 20px 50px 50px;
 
-@media screen and (max-width: 650px) {
-
-  .about-section {
-    flex-direction: column;
-    padding: 30px 20px;
-  }
-  .about-image,
-  .about-text {
-    width: 100%;
-  }
-
-}
-
-
-
-
-.chalet-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  padding: 50px;
   background-color: #f5f2eb;
 }
 
+.plan-section h2 {
+  font-family: Georgia, serif;
+
+  font-size: 30px;
+}
+
+.plan-section li {
+  margin-bottom: 15px;
+
+  line-height: 1.5;
+}
+
+.chalet-container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+  padding: 50px;
+
+  background-color: #f5f2eb;
+}
 
 .chalet {
   background-color: white;
+
   border: 1px solid #cccccc;
+
   padding: 20px;
 }
-
 
 .chalet img {
   width: 100%;
@@ -218,18 +276,233 @@ footer {
   object-fit: cover;
 }
 
-
 .chalet h2 {
+  color: #17352f;
+
+  font-family: Georgia, serif;
+
+  font-size: 28px;
+}
+
+.chalet p,
+.chalet li {
+  line-height: 1.5;
+}
+
+.capacity-section {
+  padding: 10px 50px 50px;
+
+  background-color: #f5f2eb;
+}
+
+.capacity-section h2 {
+  font-family: Georgia, serif;
+
+  font-size: 30px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  background-color: white;
+}
+
+th,
+td {
+  border: 1px solid #cccccc;
+
+  padding: 12px;
+
+  text-align: left;
+}
+
+th {
+  background-color: #17352f;
+
+  color: white;
+}
+
+.capacity-section p {
+  line-height: 1.5;
+}
+
+.membership-section {
+  display: flex;
+
+  gap: 40px;
+
+  padding: 50px;
+
+  background-color: #f5f2eb;
+}
+
+.membership-info {
+  width: 50%;
+}
+
+.safe-info {
+  width: 50%;
+
+  border: 1px solid #cccccc;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+
+  background-color: white;
+}
+
+.membership-section h2 {
+  font-family: Georgia, serif;
+
+  font-size: 30px;
+
   color: #17352f;
 }
 
+.membership-section p,
+.membership-section li {
+  line-height: 1.6;
+}
+
+.membership-section li {
+  margin-bottom: 10px;
+}
+
+.choose-section {
+  padding: 10px 50px 50px;
+
+  background-color: #f5f2eb;
+}
+
+.choose-section h2 {
+  font-family: Georgia, serif;
+
+  font-size: 30px;
+}
+
+footer {
+  background-color: #102d29;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:focus {
+  outline: 2px solid #d88b6c;
+
+  outline-offset: 3px;
+}
 
 @media screen and (max-width: 650px) {
+
+  .navbar {
+    height: auto;
+
+    flex-direction: column;
+
+    padding: 20px;
+  }
+
+  .logo {
+    margin-bottom: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px;
+  }
+
+  .home-section {
+    flex-direction: column;
+
+    padding: 30px 20px;
+  }
+
+  .home-text {
+    width: 100%;
+  }
+
+  .home-text h1 {
+    font-size: 35px;
+  }
+
+  .home-image {
+    width: 100%;
+  }
+
+  .home-image img {
+    height: 250px;
+  }
+
+  .quick-info {
+    flex-direction: column;
+
+    padding: 25px 20px;
+  }
+
+  .info-box {
+    width: 100%;
+  }
+
+  .home-info {
+    padding: 30px 20px;
+  }
+
+  .about-section {
+    flex-direction: column;
+
+    padding: 30px 20px;
+  }
+
+  .about-image,
+  .about-text {
+    width: 100%;
+  }
+
+  .plan-section {
+    padding: 10px 20px 30px;
+  }
 
   .chalet-container {
     grid-template-columns: 1fr;
 
     padding: 30px 20px;
+  }
+
+  .capacity-section {
+    padding: 10px 20px 30px;
+  }
+
+  .membership-section {
+    flex-direction: column;
+
+    padding: 30px 20px;
+  }
+
+  .membership-info,
+  .safe-info {
+    width: 100%;
+  }
+
+  .choose-section {
+    padding: 10px 20px 30px;
   }
 
 }
